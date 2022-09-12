@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/backcover.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 120%;
+    
+
+}
+
+.main-div,body,.intro-section{   
+    width: 100%;
+    height: 70vh;
+
+}
+
+.main-div>*:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+    margin-left: 5em;
+}
+.Hamburg-icon{
+
+    display: none;
+}
+.nav-items{
+    display: flex;
+    color: #2C317B;
+    flex-direction: row;
+    font-weight: bold;
+    column-gap: 3em;
+    min-width:50% ;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-left: 5em;
+    margin-right: 2em;
+    font-family: 'Roboto';}
+
+.signin-btn{
+    font-family: 'Roboto';
+    background-image: linear-gradient(to right,#965CF2,#FF8ADC);
+    color: white;
+    padding: 0.5em 2em;
+    font-size: 1rem;
+    border-radius: 2em;
+    border: none;
+}
+
+.intro-section{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.imgs-div{
+    width: 80%;
+    position: relative;
+}
+
+.imgs-div>*:last-child{
+    position:absolute;
+    max-width: 100%;
+    left: -5em;
+    bottom: -3em;
+    height: 99%;
+    
+}
+
+.imgs-div>*:nth-child(1){
+    position: absolute;
+    top: 90%;
+    left: -3em;}
+
+.imgs-div>*:nth-child(2){
+     position: absolute;
+     top: 85%;
+     left: 1em;}
+        
+.left-section>*:nth-child(1){
+    font-size: 5rem;
+    font-weight: bold;
+    color:#3E4794;
+    margin-left: 1.7em;
+    margin-top: 1.5em;
+    font-family: 'Roboto';
+
+}
+
+.left-section>*:nth-child(2){
+    font-size: 1rem;
+    color:grey;
+    margin-left: 9em;
+    margin-top: 2em;
+    width: 35%;
+    text-align: left;
+}
+
+.left-section>*:nth-child(3){
+    font-family: 'Roboto';
+    background-image: linear-gradient(to right,#965CF2,#FF8ADC);
+    color: white;
+    padding: 1em 3em;
+    font-size: 1.25rem;
+    border-radius: 2em;
+    margin-left: 7em;
+    margin-top: 2.5em;
+    border: none;}
+
+
+
+/* Media queries for Mobile 412x892 VIEWPORT */
+
+@media screen and (max-width: 412px) {
+
+    .nav-items{
+    display: none;
+    }
+
+    .Hamburg-icon{
+    display: inline-block;
+    }
+
+    .main-div>*:first-child{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     margin-top: 1em;
+     margin-left: 0;
+        }
+
+    .signin-btn{
+  
+      font-size: 0.9rem;
+
+        }
+        
+    .main-div>*:nth-child(2){
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+    }
+
+    
+    .left-section>*:nth-child(1)
+     {margin: 0;
+        font-size: 2em;
+     }
+
+     .left-section>*:nth-child(2)
+     {margin: 0;
+     }
+
+     .left-section>*:nth-child(3)
+     {margin: 0;
+     }
+
+    .left-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 3em;
+        row-gap: 3em;
+    }
+
+    .left-section>*:nth-child(1)
+     {margin: 0;
+     font-size: 2.5em;
+     }
+
+    html{
+        background-position: 0% 100%;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .imgs-div{
+        width: 100%;
+        height: 60vh;
+       
+    }
+
+    .imgs-div>*:nth-child(3){
+        position: absolute;
+        top: 1em;
+        left:3em;}
+
+    .imgs-div>*:nth-child(1){
+        position: absolute;
+        bottom: 1em;
+        left:3em;}
+
+    .imgs-div>*:nth-child(2){
+        position: absolute;
+        bottom: 1em;
+        left:7em;}
+    
+
+    }
